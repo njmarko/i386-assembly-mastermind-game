@@ -2,11 +2,11 @@
 Mastermind game coded in i386 assembly language. It uses only one 32 bit register to store the combination.
 
 <p align="center">
-  <img width="600" height="600" src="mastermind.png">
+  <img width="578" height="697" src="mastermind.png">
 </p>
 
 ## Assembly
-To convert the code into executable machine code with gcc by using the following command:
+To convert the code into executable machine code with gcc use the following command:
 
 ```gcc mastermindV2.S -m32 -o mastermindV2.out```  
 
