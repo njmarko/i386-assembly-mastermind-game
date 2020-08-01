@@ -8,12 +8,21 @@ Mastermind game coded in i386 assembly language. It uses only one 32 bit registe
 ## Assembly
 To convert the code into executable machine code with gcc use the following command:
 
+```gcc mastermindV3.S -m32 -o mastermindV3.out```  
+
+or use the following command if the terminal doesn't support ansi clear code from V3:
+
 ```gcc mastermindV2.S -m32 -o mastermindV2.out```  
 
 ## Running the program
-To run the program on linux use the following command:
+To run the version of the program you compiled on linux use the following command:
+
+```./mastermindV3.out```
+
+or 
 
 ```./mastermindV2.out```
+
 ## About the program
 Important note about the functions in the program is that the program doesn't respect the CDECL calling convenction to reduce the number of operations that would result from storing the parameters on the stack and saving the values of register. The consequence is that the code used for taking the input and printing the output is repeated six times. Idea was to optimise the execution time of functions and not worry about the size of the code for user input and output.
 ### Storing combinations
